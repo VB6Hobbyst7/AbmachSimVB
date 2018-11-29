@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<parameterinput>
+  <machine>
+    <machine0>Scram</machine0>
+    <machine1>Par</machine1>
+    <machine2>COM</machine2>
+    <machine3>Rocket</machine3>
+  </machine>
+  <nozzle>
+    <nozzle0>Maxtec</nozzle0>
+    <nozzle1>OMAX</nozzle1>
+    <nozzle2>Ormond</nozzle2>
+    <nozzle3>PaserII</nozzle3>
+    <nozzle4>PaserIII</nozzle4>
+  </nozzle>
+  <abrasive_type>
+    <abrasive_type0>B80HPX</abrasive_type0>
+    <abrasive_type1>B120HPX</abrasive_type1>
+    <abrasive_type2>B220HPX</abrasive_type2>
+    <abrasive_type3>Glassbeads-fine</abrasive_type3>
+    <abrasive_type4>B240</abrasive_type4>
+    <abrasive_type5>unknown</abrasive_type5>
+  </abrasive_type>
+  <jewel_type>
+    <jewel_type0>H20Ruby</jewel_type0>
+    <jewel_type1>H20Sapphire</jewel_type1>
+    <jewel_type2>unknown</jewel_type2>
+  </jewel_type>
+  <pump>
+    <pump0>Maxtec 40HP</pump0>
+    <pump1>Flow 20X</pump1>
+    <pump2>KMT</pump2>
+    <pump3>newpump</pump3>
+    <pump4>unknown</pump4>
+  </pump>
+</parameterinput>

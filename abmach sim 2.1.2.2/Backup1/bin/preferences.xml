@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<preferences>
+  <trk_filesize>7</trk_filesize>
+  <modelSpeedTrackBar>3</modelSpeedTrackBar>
+  <chk_csvpref>False</chk_csvpref>
+  <chk_dxfpref>False</chk_dxfpref>
+  <chk_mipref>True</chk_mipref>
+  <chk_strpref>False</chk_strpref>
+  <chk_targpref>False</chk_targpref>
+  <chk_clipfr>True</chk_clipfr>
+  <pref_footprint>True</pref_footprint>
+  <pref_maxdepth>False</pref_maxdepth>
+  <txt_frfootprint>2</txt_frfootprint>
+  <txt_milltheta>70</txt_milltheta>
+  <txt_millmrr>6</txt_millmrr>
+  <txt_rchannelmrr>3</txt_rchannelmrr>
+  <txt_rchanneltheta>64</txt_rchanneltheta>
+  <txt_schannelmrr>13</txt_schannelmrr>
+  <txt_schanneltheta>70</txt_schanneltheta>
+  <txt_surfacemesh>15</txt_surfacemesh>
+  <txt_startingFeedRate>20</txt_startingFeedRate>
+</preferences>

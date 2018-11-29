@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ABMACHSim.exe" version="1.0.0.10" publicKeyToken="a31347128e85cbdb" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="appicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ABMACHSim" version="2.1.2.1" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ABMACHSim.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ABMACHSim.exe" size="347048">
+      <assemblyIdentity name="ABMACHSim" version="2.1.2.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>OJx9ZhIHWqpwqfuXOLWAqNG3xdo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af\ABMACHSim.resources.dll" size="7168">
+      <assemblyIdentity name="ABMACHSim.resources" version="2.1.2.1" language="af" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9lQvT/gVrE0KAtNcjxKdUj9PsmI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.SHDocVw.dll" size="150528">
+      <assemblyIdentity name="Interop.SHDocVw" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WK7ZZeGIRMAgeSfVmPnIH4EjelI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ABMACHSim.exe.config" size="103">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tHjnpC+ULAPOs+t5fOQeosoKbRQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="appicon.ico" size="766">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NJzU5M/NLqLBZkRuW/r4dLLhp48=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="crosshair.bmp" size="346">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Hryh2e61vD2Sl6qFslurnQIJGQU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="machinetags.xml" size="2909" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zczmd7OQU1zCZB+086Pi+Smw18M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pan.bmp" size="358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>y1ZUpUynVsMP+5IByLxyp/mg/fk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="parameterinputs.xml" size="1029" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>u8Uo7YXzm/66kR6xE/ar84B0BME=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="preferences.xml" size="799" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BdmFdBUmDn0s9yTOkoafuzt44eM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="scissor.bmp" size="346">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>N8ceKmPvr+HvGwAU75ri1YyuXd4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="zoom.bmp" size="346">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LyPPCFs1Lttkg4Hp3XoYaMED5Hc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="zoomext.bmp" size="346">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UGSB9QVHMz5C3/v2v7FCPUSqaHk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NICKCOOKSEY\NickC" issuerKeyHash="82b4aade15b3d48a98283ca51f6639d0b7a37344" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>vnOtDKQa/r8e/msa6+syDszJcNQ=</DigestValue></Reference></SignedInfo><SignatureValue>gm/S4XdtYwX2cPJES0mlju5nIy3B1OjjSVtv1GroqWxdalJlETBQAV2uqxBo6WcPgWCsguME6juDf6fkNRjnNUzlJq/7+n3oC9OqfZf2RKTSpnA362J9dDnTlODvrHy7/5ZosLosDoryXUBfwV8GvRRS2w7sg+JSrHRROqifJRo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sD6yvYZZGTmgA6hpuv4vCmxYNy7SFGlY1QqEBopVmBI4/bSq3UFx8eB/UjpcPViCIqolU+YWlgdKEefx0IeEzXoPuwFPGFsYCWdG9nNHC2ILwfl3Rw21TJv41N5QfPSgC+GzBSIeexfnyHDOOW1Rai9R2x42OPoVI6ebj53fZNU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d470c9cc0e32ebeb1a6bfe1ebffe1aa40cad73be" Description="" Url=""><as:assemblyIdentity name="ABMACHSim.exe" version="1.0.0.10" publicKeyToken="a31347128e85cbdb" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NICKCOOKSEY\NickC</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>YCD6NKRouZfu/VR4UOV98wectaU=</DigestValue></Reference></SignedInfo><SignatureValue>CUPktI2LCLAAvYVo5MQ8ghaHsoN4yg4epA5r65Rg1liNk9jkJ/9sUTWo8hI/4pYDChCk5R48hsIqOpEIthr6jD39ceNvhJ1yP5IosavHIspcvplVluMfPTwyoJDlfNL5uNrYsd9l2T6J2JxW+OuMV2vOpUlChSAqaBS+T4ZDqQY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sD6yvYZZGTmgA6hpuv4vCmxYNy7SFGlY1QqEBopVmBI4/bSq3UFx8eB/UjpcPViCIqolU+YWlgdKEefx0IeEzXoPuwFPGFsYCWdG9nNHC2ILwfl3Rw21TJv41N5QfPSgC+GzBSIeexfnyHDOOW1Rai9R2x42OPoVI6ebj53fZNU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQZlszdu0m3ppEoMjZgPgCaDANBgkqhkiG9w0BAQUFADAtMSswKQYDVQQDHiIATgBJAEMASwBDAE8ATwBLAFMARQBZAFwATgBpAGMAawBDMB4XDTE1MTIxNTE4MjA1OVoXDTE2MTIxNTAwMjA1OVowLTErMCkGA1UEAx4iAE4ASQBDAEsAQwBPAE8ASwBTAEUAWQBcAE4AaQBjAGsAQzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsD6yvYZZGTmgA6hpuv4vCmxYNy7SFGlY1QqEBopVmBI4/bSq3UFx8eB/UjpcPViCIqolU+YWlgdKEefx0IeEzXoPuwFPGFsYCWdG9nNHC2ILwfl3Rw21TJv41N5QfPSgC+GzBSIeexfnyHDOOW1Rai9R2x42OPoVI6ebj53fZNUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAPojER8gM3Nl+CFwG8vSCpZ4cOzXWavt8sE1tUHfuBCAxO+w12uJCVHK/AIeiNK4s7SvpZ3mt51TGeo/sK+80AGMC0SVUSRTIjD/SpkerxC0mraXhpl3VMrdC5IBAMb+pRf0+srLVu8tm7ewE6Phn5yzpQNqQbsz4hoLPdBD6fgQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
