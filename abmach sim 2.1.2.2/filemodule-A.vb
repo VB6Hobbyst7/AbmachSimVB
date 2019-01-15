@@ -332,14 +332,17 @@ Namespace abmach
                                         nc(line).f = CDbl(word.Substring(fStartIndex, fLen))
                                         nc(line).fpos = ncline.IndexOf("[") + 1
                                         nc(line).flen = fLen
+                                        nc(line).fScaled = True
                                     Else
                                         fStartIndex = word.IndexOf("F") + 1
                                         nc(line).f = CDbl(word.Substring(fStartIndex))
                                         nc(line).fpos = ncline.IndexOf("F") + 1
                                         nc(line).flen = ncline.Substring(ncline.IndexOf("F") + 1).Length
+                                        nc(line).fScaled = False
                                     End If
                                     nc(line).fline = linenumber
-                                        comment = False
+
+                                    comment = False
                                     Else
                                         comment = True
 

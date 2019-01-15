@@ -217,3 +217,36 @@ C:\Users\nickc\OneDrive\Documents\Software Projects\abmach sim 2.1.2.2\obj\Debug
 C:\Users\nickc\OneDrive\Documents\Software Projects\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.exe
 C:\Users\nickc\OneDrive\Documents\Software Projects\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.xml
 C:\Users\nickc\OneDrive\Documents\Software Projects\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.pdb
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\machinetags.xml
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\MRRcoefficients.xml
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\parameterinputs.xml
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\preferences.xml
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\ABMACHSim.exe.config
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\ABMACHSim.exe.manifest
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\ABMACHSim.application
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\ABMACHSim.exe
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\ABMACHSim.pdb
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\ABMACHSim.xml
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\af\ABMACHSim.resources.dll
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\bin\Interop.SHDocVw.dll
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHbase.vbprojAssemblyReference.cache
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\Interop.SHDocVw.dll
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHbase.vbproj.ResolveComReference.cache
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.abmach.about.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.abmach.Help.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.abmach.Form1.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.abmach.parminput.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.abmach.preferences.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.RenumberForm.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.rescaleFeedratesForm.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.ShiftProgForm.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\WindowsApplication1.abmach.parminput.af.resources
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHbase.vbproj.GenerateResource.cache
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHbase.vbproj.CoreCompileInputs.cache
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\af\ABMACHSim.resources.dll
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.exe.manifest
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.application
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.exe
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.xml
+C:\Users\nickc\Source\Repos\AbmachSimVB\abmach sim 2.1.2.2\obj\Debug\ABMACHSim.pdb

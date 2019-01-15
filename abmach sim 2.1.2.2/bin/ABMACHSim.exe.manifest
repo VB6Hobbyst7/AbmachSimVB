@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ABMACHSim.exe" size="342016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ABMACHSim.exe" size="344064">
       <assemblyIdentity name="ABMACHSim" version="2.1.2.2" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ves2KCx/ROVsH9fVXxIQLjPp/mg=</dsig:DigestValue>
+        <dsig:DigestValue>kjd9pxBadCPCRRa8JYWyPQj4I50=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>gEnJgFS1Q9mCZT8hBD4Rw8bU9h4=</dsig:DigestValue>
+        <dsig:DigestValue>zDjPUUmjgiThxVfJR/xeZzBfyrM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>mfpFi9fvQHroPy8QRU3cg/1mtWc=</dsig:DigestValue>
+        <dsig:DigestValue>+icCO6y7+1syKOswyUgPGm2gbPE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

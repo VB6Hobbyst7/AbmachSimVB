@@ -144,7 +144,7 @@ Namespace abmach
         Friend WithEvents mnuEquationTargetDepth As System.Windows.Forms.MenuItem
         Friend WithEvents mnuEquationMask As System.Windows.Forms.MenuItem
         Friend WithEvents MenuItem11 As System.Windows.Forms.MenuItem
-
+        Friend WithEvents Panel4 As Panel
 
         Dim thd As Thread
 #Region " Windows Form Designer generated code "
@@ -518,6 +518,7 @@ Namespace abmach
             Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
             Me.ButtonStopBackground = New System.Windows.Forms.Button()
             Me.ButtonRunBackground = New System.Windows.Forms.Button()
+            Me.Panel4 = New System.Windows.Forms.Panel()
             Me.runinfo.SuspendLayout()
             Me.outputoptions.SuspendLayout()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -537,6 +538,7 @@ Namespace abmach
             CType(Me.parmfilename, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.mask, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.MI, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.Panel4.SuspendLayout()
             Me.SuspendLayout()
             '
             'mnuPaste
@@ -1175,7 +1177,7 @@ Namespace abmach
             '
             Me.Runmodel.DialogResult = System.Windows.Forms.DialogResult.OK
             Me.Runmodel.Enabled = False
-            Me.Runmodel.Location = New System.Drawing.Point(475, 525)
+            Me.Runmodel.Location = New System.Drawing.Point(3, 3)
             Me.Runmodel.Name = "Runmodel"
             Me.Runmodel.Size = New System.Drawing.Size(48, 44)
             Me.Runmodel.TabIndex = 12
@@ -1185,7 +1187,7 @@ Namespace abmach
             '
             Me.stopmodel.DialogResult = System.Windows.Forms.DialogResult.Cancel
             Me.stopmodel.Enabled = False
-            Me.stopmodel.Location = New System.Drawing.Point(529, 525)
+            Me.stopmodel.Location = New System.Drawing.Point(57, 3)
             Me.stopmodel.Name = "stopmodel"
             Me.stopmodel.Size = New System.Drawing.Size(48, 44)
             Me.stopmodel.TabIndex = 13
@@ -1234,7 +1236,7 @@ Namespace abmach
             '
             'ProgressBar1
             '
-            Me.ProgressBar1.Location = New System.Drawing.Point(475, 575)
+            Me.ProgressBar1.Location = New System.Drawing.Point(3, 53)
             Me.ProgressBar1.Name = "ProgressBar1"
             Me.ProgressBar1.Size = New System.Drawing.Size(224, 14)
             Me.ProgressBar1.TabIndex = 6
@@ -1794,7 +1796,7 @@ Namespace abmach
             Me.Panel1.Controls.Add(Me.zoomext)
             Me.Panel1.Controls.Add(Me.crossh)
             Me.Panel1.Controls.Add(Me.xsection)
-            Me.Panel1.Location = New System.Drawing.Point(1046, 311)
+            Me.Panel1.Location = New System.Drawing.Point(1046, 304)
             Me.Panel1.Name = "Panel1"
             Me.Panel1.Size = New System.Drawing.Size(185, 45)
             Me.Panel1.TabIndex = 20
@@ -1829,7 +1831,7 @@ Namespace abmach
             Me.Panel2.Controls.Add(Me.Label20)
             Me.Panel2.Controls.Add(Me.txtxsectpos)
             Me.Panel2.Controls.Add(Me.PictureBox2)
-            Me.Panel2.Location = New System.Drawing.Point(753, 374)
+            Me.Panel2.Location = New System.Drawing.Point(753, 356)
             Me.Panel2.Name = "Panel2"
             Me.Panel2.Size = New System.Drawing.Size(519, 244)
             Me.Panel2.TabIndex = 24
@@ -1953,7 +1955,7 @@ Namespace abmach
             '
             Me.ButtonStopBackground.DialogResult = System.Windows.Forms.DialogResult.Cancel
             Me.ButtonStopBackground.Enabled = False
-            Me.ButtonStopBackground.Location = New System.Drawing.Point(646, 525)
+            Me.ButtonStopBackground.Location = New System.Drawing.Point(174, 3)
             Me.ButtonStopBackground.Name = "ButtonStopBackground"
             Me.ButtonStopBackground.Size = New System.Drawing.Size(53, 44)
             Me.ButtonStopBackground.TabIndex = 13
@@ -1964,27 +1966,35 @@ Namespace abmach
             '
             Me.ButtonRunBackground.DialogResult = System.Windows.Forms.DialogResult.OK
             Me.ButtonRunBackground.Enabled = False
-            Me.ButtonRunBackground.Location = New System.Drawing.Point(583, 525)
+            Me.ButtonRunBackground.Location = New System.Drawing.Point(111, 3)
             Me.ButtonRunBackground.Name = "ButtonRunBackground"
             Me.ButtonRunBackground.Size = New System.Drawing.Size(57, 44)
             Me.ButtonRunBackground.TabIndex = 12
             Me.ButtonRunBackground.Text = "Run Back"
+            '
+            'Panel4
+            '
+            Me.Panel4.Controls.Add(Me.ProgressBar1)
+            Me.Panel4.Controls.Add(Me.ButtonRunBackground)
+            Me.Panel4.Controls.Add(Me.Runmodel)
+            Me.Panel4.Controls.Add(Me.ButtonStopBackground)
+            Me.Panel4.Controls.Add(Me.stopmodel)
+            Me.Panel4.Location = New System.Drawing.Point(485, 512)
+            Me.Panel4.Name = "Panel4"
+            Me.Panel4.Size = New System.Drawing.Size(235, 73)
+            Me.Panel4.TabIndex = 27
             '
             'Form1
             '
             Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
             Me.BackColor = System.Drawing.SystemColors.Control
             Me.ClientSize = New System.Drawing.Size(1284, 623)
+            Me.Controls.Add(Me.Panel4)
             Me.Controls.Add(Me.sbfrm1)
             Me.Controls.Add(Me.Panel1)
             Me.Controls.Add(Me.GroupBox1)
             Me.Controls.Add(Me.PictureBox1)
-            Me.Controls.Add(Me.ProgressBar1)
             Me.Controls.Add(Me.Richtextbox1)
-            Me.Controls.Add(Me.ButtonRunBackground)
-            Me.Controls.Add(Me.Runmodel)
-            Me.Controls.Add(Me.ButtonStopBackground)
-            Me.Controls.Add(Me.stopmodel)
             Me.Controls.Add(Me.outputoptions)
             Me.Controls.Add(Me.runinfo)
             Me.Controls.Add(Me.Panel2)
@@ -2020,6 +2030,7 @@ Namespace abmach
             CType(Me.parmfilename, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.mask, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.MI, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.Panel4.ResumeLayout(False)
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -2045,18 +2056,20 @@ Namespace abmach
 
         Sub setcomponentlocations()
             'set size and location of controls when main form is loaded or resized
-            'Me.Richtextbox1.SetBounds(5, 20, CInt(Me.ClientRectangle.Width * 0.5), CInt(Me.ClientRectangle.Height * 0.45))
-            'Dim textWindowWidth As Integer = Math.Min(CInt(Me.ClientRectangle.Width * 0.5), 480)
-            'Me.Richtextbox1.SetBounds(5, 20, textWindowWidth, CInt(Me.ClientRectangle.Height * 0.45))
-            ''Me.PictureBox1.SetBounds(Me.Richtextbox1.Width + 10, 20, CInt(Me.ClientRectangle.Width * 0.5) - 35, CInt(Me.ClientRectangle.Height * 0.45))
-            'Me.PictureBox1.SetBounds(Me.Richtextbox1.Width + 10, 20, Me.ClientRectangle.Width - Me.Richtextbox1.Width - 20, CInt(Me.ClientRectangle.Height * 0.45))
-            'Me.GroupBox1.SetBounds(Me.PictureBox1.Location.X, Me.PictureBox1.Location.Y + Me.PictureBox1.Height + 15, 215, 180)
-            'Me.Panel1.SetBounds(Me.GroupBox1.Location.X + Me.GroupBox1.Width + 5, Me.GroupBox1.Location.Y, 185, 45)
-            'Me.PictureBox2.SetBounds(Me.Panel1.Location.X, Me.Panel1.Location.Y + Me.Panel1.Height + 5, Me.ClientRectangle.Width - Me.Panel1.Location.X - 20, Me.ClientRectangle.Height - (Me.Panel1.Location.Y + Me.Panel1.Height) - 35)
 
-            'Me.Panel2.SetBounds(Me.PictureBox2.Left, Me.PictureBox2.Top, Me.PictureBox2.Width, 20)
+            Dim textWindowWidth As Integer = Math.Min(CInt(Me.ClientRectangle.Width * 0.5), 480)
+            Me.Richtextbox1.SetBounds(5, 20, textWindowWidth, CInt(Me.ClientRectangle.Height * 0.45))
+            Me.PictureBox1.SetBounds(Me.Richtextbox1.Width + 10, 20, Me.ClientRectangle.Width - Me.Richtextbox1.Width - 20, CInt(Me.ClientRectangle.Height * 0.45))
+            Me.GroupBox1.SetBounds(Me.PictureBox1.Location.X, Me.PictureBox1.Location.Y + Me.PictureBox1.Height + 15, 215, 180)
+            Me.Panel1.SetBounds(Me.GroupBox1.Location.X + Me.GroupBox1.Width + 5, Me.GroupBox1.Location.Y, 185, 45)
+            Me.Panel2.SetBounds(Me.Panel1.Location.X, Me.Panel1.Location.Y + Me.Panel1.Height + 5, Me.ClientRectangle.Width - Me.Panel1.Location.X - 20, Me.ClientRectangle.Height - (Me.Panel1.Location.Y + Me.Panel1.Height) - 35)
+            Me.runinfo.SetBounds(Richtextbox1.Left, Richtextbox1.Top + Richtextbox1.Height + 10, 200, 225)
 
-            'Me.sbfrm1.SetBounds(0, Me.ClientRectangle.Height - 30, Me.ClientRectangle.Width - 25, 25)
+            Me.Panel3.SetBounds(runinfo.Left + runinfo.Width + 10, runinfo.Top, 220, 125)
+            Me.outputoptions.SetBounds(Panel3.Left, Panel3.Top + Panel3.Height + 10, 176, 145)
+            Me.Panel4.SetBounds(outputoptions.Left + outputoptions.Width + 10, GroupBox1.Top + GroupBox1.Height + 10, 245, 82)
+            Me.sbfrm1.SetBounds(0, Me.ClientRectangle.Height - 30, Me.ClientRectangle.Width - 25, 25)
+
             'set zoom factor to 1 and offset to 0 when main form is loaded or resized
             screendisplay.X = 0
             screendisplay.Y = 0
@@ -3800,6 +3813,10 @@ Namespace abmach
             Me.zoom.BackColor = SystemColors.Control
             Me.xsection.BackColor = SystemColors.Control
             Me.crossh.BackColor = SystemColors.ActiveCaption
+
+        End Sub
+
+        Private Sub outputoptions_Enter(sender As Object, e As EventArgs) Handles outputoptions.Enter
 
         End Sub
 
@@ -5890,19 +5907,29 @@ Namespace abmach
                         ncLine = nclines(i).Trim
                         If nc(j).fline = i And replacef(j) <> 0.0 Then
                             Dim lineLen As Integer = ncLine.Length
-                            Dim fPosition As Integer = ncLine.IndexOf("F") + 1
-                            Dim fLen As Integer = lineLen - fPosition
-                            newncline = ncLine.Remove(fPosition, fLen)
-                            Dim f As String = String.Format(CStr(Math.Round(replacef(j), 2)), "f2")
-                            newncline = newncline.Insert(fPosition, f)
-                            If j < jmax Then
-                                j = j + 1
+                            Dim fStartPosition As Integer
+                            Dim fEndPosition As Integer
+                            If nc(j).fScaled Then
+                                fStartPosition = ncLine.IndexOf("F") + 2
+                                fEndPosition = ncLine.IndexOf("*", fStartPosition)
+                            Else
+                                fStartPosition = ncLine.IndexOf("F") + 1
+                                fEndPosition = lineLen
                             End If
-                        Else
-                            newncline = ncLine
+
+                            Dim fLen As Integer = fEndPosition - fStartPosition
+                            newncline = ncLine.Remove(fStartPosition, fLen)
+                            Dim f As String = String.Format(CStr(Math.Round(replacef(j), 2)), "f2")
+                            newncline = newncline.Insert(fStartPosition, f)
+                            If j < jmax Then
+                                    j = j + 1
+                                End If
+                            Else
+                                newncline = ncLine
                         End If
-                        newnclines(i) = newncline
-                    End If 'not a comment
+                            newnclines(i) = newncline
+
+                        End If 'not a comment
                 Next
                 rewritetextbox(newnclines)
             Catch ex As Exception

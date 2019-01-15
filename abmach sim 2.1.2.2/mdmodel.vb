@@ -1,5 +1,7 @@
 Imports System.Xml
 Imports System.IO
+Imports System.Collections.Generic
+
 Namespace abmach
     Public Module mdmodel
         'start model declarations
@@ -84,6 +86,7 @@ Namespace abmach
             Dim jeton As Boolean
             Dim abron As Boolean
             Dim isComment As Boolean
+            Dim fScaled As Boolean
             Dim l As Integer
         End Structure
         Public Structure smachine
@@ -237,21 +240,6 @@ Namespace abmach
         Dim accel As Double
         Dim deltaf As Double
         Dim fb, f0, f1, fb0 As Double
-
-
-
-        'vector calc variables
-        'accelcheck()
-
-
-        'depth profile output variables
-        'function get indexes
-        'newfeedrate output variables
-        'scannc variables
-
-
-
-        'nominal depth surface option
 
         Public Sub initialize(ByVal runs As Integer)
             Dim i, a, b As Integer
@@ -557,112 +545,7 @@ Namespace abmach
             End If
 
         End Function 'direction
-        'Sub accelcheck(ByVal maxacceln As Double, ByVal maxaccelt As Double)
-        '    'check machine for unrealistic acceleration
-        '    'Call output_to_sheet(0)
-        '    Dim deltax, deltay, deltal, direction0, direction1, deltadirection As Double
-        '    Dim vmax, deltav, deltat, acceln, accelt As Double
-        '    Dim i As Integer
-        '    For i = 1 To toolpath.Length - 2
-        '        deltax = toolpath(i).x - toolpath(i - 1).x
-        '        deltay = toolpath(i).y - toolpath(i - 1).y
-        '        deltal = Math.Sqrt(deltax ^ 2 + deltay ^ 2)
-        '        If deltal >= toolsegmentl Then
-        '            'calc direction of consecutive segments in toolpath
-        '            direction0 = direction(toolpath(i - 1).x, toolpath(i - 1).y, toolpath(i).x, toolpath(i).y)
-        '            direction1 = direction(toolpath(i).x, toolpath(i).y, toolpath(i + 1).x, toolpath(i + 1).y)
 
-        '            'direction change
-        '            deltadirection = Math.Abs(direction1 - direction0)
-        '            If CShort(deltadirection * 1000) = CShort(pi * 1000) Then deltadirection = pi / 2
-        '            'speed change
-        '            deltav = toolpath(i).f - toolpath(i - 1).f
-        '            deltat = toolsegmentl / toolpath(i).f
-        '            'normal acceleration
-        '            acceln = (toolsegmentl * Math.Sin(deltadirection)) / deltat ^ 2
-        '            If acceln <> 0 Then
-        '                vmax = toolsegmentl / Math.Sqrt(Math.Abs(toolsegmentl * Math.Sin(deltadirection) / maxacceln))
-        '            Else
-        '                vmax = toolpath(i).f
-        '            End If
-        '            'tangent acceleration
-        '            accelt = deltav / deltat
-
-        '            If Math.Abs(acceln) > maxacceln Then
-        '                toolpath(i).mf = vmax
-        '            End If
-        '        End If
-        '    Next i
-        '    'Call output_to_sheet(1)
-        '    For i = 1 To toolpath.Length - 2
-        '        deltax = toolpath(i).x - toolpath(i - 1).x
-        '        deltay = toolpath(i).y - toolpath(i - 1).y
-        '        deltal = Math.Sqrt(deltax ^ 2 + deltay ^ 2)
-        '        If deltal >= toolsegmentl Then
-        '            'calc direction of consecutive segments in toolpath
-        '            direction0 = direction(toolpath(i - 1).x, toolpath(i - 1).y, toolpath(i).x, toolpath(i).y)
-        '            direction1 = direction(toolpath(i).x, toolpath(i).y, toolpath(i + 1).x, toolpath(i + 1).y)
-        '            deltadirection = System.Math.Abs(direction1 - direction0)
-        '            If CShort(deltadirection * 1000) = CShort(pi * 1000) Then deltadirection = pi / 2
-
-        '            'speed change in in/min
-        '            deltav = toolpath(i).mf - toolpath(i - 1).mf
-        '            'time to traverse segment in mins
-        '            deltat = toolsegmentl / toolpath(i).mf
-
-        '            'normal acceleration
-        '            acceln = (toolsegmentl * Math.Sin(deltadirection)) / deltat ^ 2
-        '            If acceln <> 0 Then
-        '                vmax = toolsegmentl / Math.Sqrt(System.Math.Abs(toolsegmentl * Math.Sin(deltadirection) / maxacceln))
-        '            End If
-        '            'tangent acceleration
-        '            accelt = deltav / deltat
-
-        '            If Math.Abs(accelt) > maxaccelt Then
-        '                toolpath(i).mf = toolpath(i - 1).f + Math.Sign(accelt) * (maxaccelt * deltat)
-
-        '                If toolpath(i).mf > vmax And acceln <> 0 Then toolpath(i).mf = vmax
-
-        '            End If
-
-        '            ''range("n1").Offset(i, 2) = toolpath(2, i)
-        '        End If
-        '    Next i
-        '    'Call output_to_sheet(2)
-
-        '    For i = toolpath.Length - 2 To 2 Step -1
-        '        deltax = toolpath(i).x - toolpath(i - 1).x
-        '        deltay = toolpath(i).y - toolpath(i - 1).y
-        '        deltal = System.Math.Sqrt(deltax ^ 2 + deltay ^ 2)
-        '        If deltal >= toolsegmentl Then
-        '            'calc direction of consecutive segments in toolpath
-        '            direction0 = direction(toolpath(i - 1).x, toolpath(i - 1).y, toolpath(i).x, toolpath(i).y)
-        '            direction1 = direction(toolpath(i).x, toolpath(i).y, toolpath(i + 1).x, toolpath(i + 1).y)
-
-        '            'direction Change
-        '            deltadirection = Math.Abs(direction1 - direction0)
-        '            If CShort(deltadirection * 1000) = CShort(pi * 1000) Then deltadirection = pi / 2
-
-        '            'speed change
-        '            deltav = toolpath(i - 1).mf - toolpath(i).mf
-        '            deltat = toolsegmentl / toolpath(i).mf
-        '            'tangent acceleration
-        '            accelt = deltav / deltat
-        '            'normal acceleration
-        '            acceln = (toolsegmentl * Math.Sin(deltadirection)) / deltat ^ 2
-        '            If acceln <> 0 Then
-        '                vmax = toolsegmentl / Math.Sqrt(System.Math.Abs(toolsegmentl * System.Math.Sin(deltadirection) / maxacceln))
-        '            End If
-
-
-        '            If Math.Abs(accelt) > maxaccelt Then
-        '                toolpath(i - 1).mf = toolpath(i).mf + Math.Sign(accelt) * (maxaccelt * deltat)
-        '                If toolpath(i).mf > vmax And acceln <> 0 Then toolpath(i).mf = vmax
-
-        '            End If
-        '        End If
-        '    Next i
-        'End Sub 'accelcheck
         Function deltabfactor(ByVal depth As Double, ByVal deltab As Double, ByVal deltal As Double, ByVal deltal3d As Double) As Double
             Dim deltalprime As Double
             'calculate change in feed rate due to b axis change and depth
@@ -897,6 +780,70 @@ Namespace abmach
                 Next xa
             Next ya
             maxFootprintDepth = temp
+
+        End Function
+        Function maxFootprintDepth2(ByVal x As Double, ByVal y As Double, ByVal halfWidth As Integer) As Double
+            Dim ya, xIndex, xa, yIndex As Integer
+            Dim pointcount As Integer = 0
+            Dim temp As Double = 0
+            Dim pointList As New List(Of Double)
+
+            xIndex = getxindex(x, mesh_size, ccomp, pathmin_x)
+            yIndex = getyindex(y, mesh_size, ccomp, pathmin_y)
+            For ya = yIndex - halfWidth To yIndex + halfWidth
+                For xa = xIndex - halfWidth To xIndex + halfWidth
+                    If xa >= 0 And xa <= surface.GetUpperBound(0) And ya >= 0 And ya <= surface.GetUpperBound(1) Then
+
+                        If (Math.Abs(surface(xa, ya)) > 0) Then
+                            pointList.Add(surface(xa, ya))
+                        End If
+                    End If
+
+                Next xa
+            Next ya
+            pointList.Sort()
+            pointcount = pointList.Count
+            Dim aveCount As Integer = 0
+            Dim upperAve As Double = 0
+            Dim upperQuart As Integer = pointcount * 0.75
+            For i As Integer = upperQuart To pointcount - 1
+                upperAve += pointList(i)
+                aveCount += 1
+            Next
+
+            maxFootprintDepth2 = upperAve / aveCount
+
+        End Function
+        Function maxFootprintDepth3(ByVal x As Double, ByVal y As Double, ByVal halfWidth As Integer) As Double
+            Dim ya, xIndex, xa, yIndex As Integer
+            Dim pointcount As Integer = 0
+            Dim temp As Double = 0
+            Dim pointList As New List(Of Double)
+            Dim maxAngle As Double = Math.PI / 8.0
+            xIndex = getxindex(x, mesh_size, ccomp, pathmin_x)
+            yIndex = getyindex(y, mesh_size, ccomp, pathmin_y)
+            For ya = yIndex - halfWidth To yIndex + halfWidth
+                For xa = xIndex - halfWidth To xIndex + halfWidth
+                    If xa >= 0 And xa <= surface.GetUpperBound(0) And ya >= 0 And ya <= surface.GetUpperBound(1) Then
+                        Dim angle As Double = incidentAngle(xa, ya)
+                        If Math.Abs(surface(xa, ya)) > 0 And angle < maxAngle Then
+                            pointList.Add(surface(xa, ya))
+                        End If
+                    End If
+
+                Next xa
+            Next ya
+            pointList.Sort()
+            pointcount = pointList.Count
+            Dim aveCount As Integer = 0
+            Dim upperAve As Double = 0
+            Dim upperQuart As Integer = pointcount * 0.95
+            For i As Integer = upperQuart To pointcount - 1
+                upperAve += pointList(i)
+                aveCount += 1
+            Next
+
+            maxFootprintDepth3 = upperAve / aveCount
 
         End Function
         Function avedepth(ByVal x As Double, ByVal y As Double, ByVal halfWidth As Integer) As Double
@@ -1274,12 +1221,6 @@ Namespace abmach
                                         Dim angle As Double = incidentAngle(a, b)
                                         slfactor = slopefactor3(angle)
                                         tempsurface(a, b) = fr * slfactor * mi_surface(a, b) * jfactor
-                                        If toolpath(i).x > 0.98 And toolpath(i).x < 1.02 Then
-                                            Dim s As String
-
-                                            s = r.ToString() + "," + toolpath(i).x.ToString() + "," + toolpath(i).y.ToString() + "," + angle.ToString("F5") + "," + slfactor.ToString("F5") + "," + jfactor.ToString("f5")
-                                            ' debugdataList.Add(s)
-                                        End If
                                     Else
                                         tempsurface(a, b) = 0
                                     End If
@@ -1361,10 +1302,11 @@ Namespace abmach
                     If (Not nc(i).isComment) Then
                         Do While toolpath(j).n = nc(i).n And j < toolpath.GetUpperBound(0)
 
-                            If maxdepthcalcpref And (grvedir = groovedirection.X Or grvedir = groovedirection.Y) Then
+                            If maxdepthcalcpref Then
                                 'changed depth calc to max depth from avedepth to use in rocket type grooves
                                 'toolpath(j).segmentdepth = maxdepth(toolpath(j).x, toolpath(j).y, grvedir)
-                                toolpath(j).segmentdepth = maxFootprintDepth(toolpath(j).x, toolpath(j).y, frfootprint)
+                                'toolpath(j).segmentdepth = maxFootprintDepth(toolpath(j).x, toolpath(j).y, frfootprint)
+                                toolpath(j).segmentdepth = maxFootprintDepth3(toolpath(j).x, toolpath(j).y, frfootprint)
                                 nc(i).depth = nc(i).depth + toolpath(j).segmentdepth
                             Else
                                 toolpath(j).segmentdepth = avedepth(toolpath(j).x, toolpath(j).y, frfootprint)
@@ -1421,7 +1363,8 @@ Namespace abmach
                             'End If
 
                             If nc(i).newf = 0 Then
-                                Throw New Exception("New Feed rate equals zero at: " & nc(i).line)
+                                nc(i).newf = nc(i).f
+                                'Throw New Exception("New Feed rate equals zero at: " & nc(i).line)
                             End If
 
                         End If 'newfeed 
